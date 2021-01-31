@@ -4,13 +4,13 @@ import styled from "styled-components";
 import IWeather from "../Assets/IWeather";
 
 interface WeatherWidgetProps {
-  data: string[];
+  citiesList: string[];
   colors: string[];
 }
 
-const WeatherWidget = ({ data, colors }: WeatherWidgetProps) => {
+const WeatherWidget = ({ citiesList, colors }: WeatherWidgetProps) => {
   function drawCities() {
-    let citiesToShow: string[] = [...data];
+    let citiesToShow: string[] = [...citiesList];
     citiesToShow.sort(() => 0.5 - Math.random());
     citiesToShow.pop();
     citiesToShow.pop();

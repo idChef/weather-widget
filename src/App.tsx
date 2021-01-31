@@ -14,7 +14,7 @@ function App() {
     <>
       <h1>Weather widget</h1>
       <WeatherWidget
-        data={listOfCities}
+        citiesList={listOfCities}
         colors={["204", "360", "20"]}
       ></WeatherWidget>
     </>
